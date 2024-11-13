@@ -1,0 +1,912 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>GamesJCN-Emulação</title>
+<style type="text/css">
+#Fundo {
+	position:absolute;
+	width:1024px;
+	height:2194px;
+	z-index:0;
+	left: 0px;
+	top: 15px;
+	visibility: visible;
+	background-color: #0080FF;
+}
+#Topo {
+	position:absolute;
+	left:0px;
+	top:6px;
+	width:1024px;
+	height:268px;
+	z-index:3;
+	background-image: url(imagens/Topo_gamesjcn.png);
+	visibility: visible;
+}
+#MenuLateralbarra {
+	position:absolute;
+	left:6px;
+	top:409px;
+	width:203px;
+	height:1802px;
+	z-index:6;
+	visibility: visible;
+	background-color: #FFFFFF;
+}
+#Rodape {
+	position:absolute;
+	left:0px;
+	top:2167px;
+	width:1024px;
+	height:64px;
+	z-index:10;
+	background-image: url(imagens/barramenutra.png);
+	visibility: visible;
+}
+#Botoes {
+	position:absolute;
+	left:0px;
+	top:274px;
+	width:1024px;
+	height:64px;
+	z-index:4;
+	background-image: url(imagens/barramenutra.png);
+	visibility: visible;
+}
+
+#contrucao {
+	position:absolute;
+	left:22px;
+	top:258px;
+	width:980px;
+	height:1902px;
+	z-index:1;
+	visibility: visible;
+}
+#Roms {
+	position:absolute;
+	left:772px;
+	top:278px;
+	width:115px;
+	height:50px;
+	z-index:6;
+}
+#Botaomenu {
+	position:absolute;
+	left:45px;
+	top:631px;
+	width:190px;
+	height:27px;
+	z-index:6;
+}
+#Botaomenu2 {
+	position:absolute;
+	left:31px;
+	top:344px;
+	width:226px;
+	height:58px;
+	z-index:10;
+	background-color: #FFFFCC;
+}
+#Botaomenu {
+	position:absolute;
+	left:-8px;
+	top:325px;
+	width:203px;
+	height:100px;
+	z-index:10;
+	visibility: visible;
+}
+#Botaomenu4 {
+	position:absolute;
+	left:47px;
+	top:828px;
+	width:190px;
+	height:27px;
+	z-index:6;
+	background-color: #FFFFCC;
+}
+#Botaomenu5 {	position:absolute;
+	left:53px;
+	top:482px;
+	width:190px;
+	height:27px;
+	z-index:6;
+	background-color: #FFFFCC;
+}
+#Botaomenu6 {	position:absolute;
+	left:45px;
+	top:631px;
+	width:190px;
+	height:27px;
+	z-index:6;
+	background-color: #FFFFCC;
+}
+#Botaomenu7 {	position:absolute;
+	left:45px;
+	top:631px;
+	width:190px;
+	height:27px;
+	z-index:6;
+	background-color: #FFFFCC;
+}
+#Botaomenu8 {	position:absolute;
+	left:45px;
+	top:631px;
+	width:190px;
+	height:27px;
+	z-index:6;
+	background-color: #FFFFCC;
+}
+#apDiv1 {
+	position:absolute;
+	left:450px;
+	top:302px;
+	width:115px;
+	height:40px;
+	z-index:11;
+}
+#InicioIcone {
+	position:absolute;
+	left:277px;
+	top:243px;
+	width:120px;
+	height:120px;
+	z-index:11;
+	visibility: visible;
+}
+#apDiv4 {
+	position:absolute;
+	left:875px;
+	top:85px;
+	width:60px;
+	height:60px;
+	z-index:11;
+	background-image: url(imagens/plan.png);
+}
+#apDiv5 {
+	position:absolute;
+	left:800px;
+	top:85px;
+	width:60px;
+	height:60px;
+	z-index:12;
+	background-image: url(imagens/hard.png);
+}
+#Emuladores {
+	position:absolute;
+	left:434px;
+	top:273px;
+	width:130px;
+	height:60px;
+	z-index:6;
+	visibility: visible;
+	background-image: url(imagens/barrinha.png);
+}
+#apDiv6 {
+	position:absolute;
+	left:725px;
+	top:85px;
+	width:60px;
+	height:60px;
+	z-index:6;
+	background-image: url(imagens/Sem%20T%C3%ADtulo-1.png);
+}
+#Roms {
+	position:absolute;
+	left:590px;
+	top:323px;
+	width:130px;
+	height:60px;
+	z-index:6;
+	visibility: visible;
+	background-image: url(imagens/barrinha.png);
+}
+#Contato {
+	position:absolute;
+	left:902px;
+	top:273px;
+	width:130px;
+	height:60px;
+	z-index:6;
+	background-image: url(imagens/barrinha.png);
+	visibility: visible;
+}
+#Flashgames {
+	position:absolute;
+	left:746px;
+	top:273px;
+	width:130px;
+	height:60px;
+	z-index:6;
+	background-image: url(imagens/barrinha.png);
+	visibility: visible;
+}
+#Inicio strong {
+	font-size: 18px;
+	color: #00C;
+}
+#Nomeinicio {
+	position:absolute;
+	left:335px;
+	top:280px;
+	width:84px;
+	height:55px;
+	z-index:12;
+	font-size: 36px;
+}
+#EmuladoresNome {
+	position:absolute;
+	left:459px;
+	top:290px;
+	width:107px;
+	height:27px;
+	z-index:13;
+	font-size: 23px;
+	color: #FFF;
+	visibility: visible;
+}
+#apDiv {
+	position:absolute;
+	left:30px;
+	top:278px;
+	width:52px;
+	height:52px;
+	z-index:13;
+	font-size: 23px;
+	color: #FFF;
+}
+#RomsNome {
+	position:absolute;
+	left:634px;
+	top:290px;
+	width:76px;
+	height:27px;
+	z-index:13;
+	font-size: 23px;
+	color: #FFF;
+}
+#apDiv7 {
+	position:absolute;
+	left:914px;
+	top:156px;
+	width:60px;
+	height:60px;
+	z-index:13;
+	font-size: 23px;
+	color: #FFF;
+	background-image: url(imagens/Vtenis.png);
+}
+#InicioNome {
+	position:absolute;
+	left:296px;
+	top:280px;
+	width:90px;
+	height:42px;
+	z-index:14;
+	font-weight: bold;
+	font-size: 33px;
+}
+a {
+	color:#000;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #F00;
+	font-weight: bold;
+	font-size: 16px;
+}
+.corPreta {
+	color:#000;
+	font-size: 33px;
+	text-decoration: none;
+	font-weight: bold;
+}
+.corPreta:hover {
+	color:#F00;
+	font-size: 35px;
+	font-weight: bold;
+}
+#apDiv2 {
+	position:absolute;
+	left:194px;
+	top:156px;
+	width:60px;
+	height:60px;
+	z-index:15;
+	background-image: url(imagens/Sem%20T%C3%ADtulo-1.png);
+}
+#apDiv3 {
+	position:absolute;
+	left:950px;
+	top:85px;
+	width:60px;
+	height:60px;
+	z-index:15;
+	background-image: url(imagens/fable3.png);
+}
+#apDiv8 {
+	position:absolute;
+	left:840px;
+	top:155px;
+	width:60px;
+	height:60px;
+	z-index:16;
+	background-image: url(imagens/pes.png);
+}
+#apDiv9 {
+	position:absolute;
+	left:763px;
+	top:156px;
+	width:60px;
+	height:60px;
+	z-index:17;
+	background-image: url(imagens/nba.png);
+}
+#apDiv10 {
+	position:absolute;
+	left:931px;
+	top:280px;
+	width:84px;
+	height:45px;
+	z-index:18;
+}
+#apDiv11 {
+	position:absolute;
+	left:74px;
+	top:473px;
+	width:120px;
+	height:83px;
+	z-index:19;
+}
+#SnesNome {
+	position:absolute;
+	left:115px;
+	top:607px;
+	width:80px;
+	height:45px;
+	z-index:17;
+}
+#apDiv13 {
+	position:absolute;
+	left:15px;
+	top:599px;
+	width:75px;
+	height:95px;
+	z-index:18;
+}
+#apDiv14 {
+	position:absolute;
+	left:332px;
+	top:377px;
+	width:380px;
+	height:115px;
+	z-index:5;
+}
+#apDiv15 {
+	position:absolute;
+	left:190px;
+	top:590px;
+	width:80px;
+	height:80px;
+	z-index:20;
+	background-image: url(imagens/Snesgamesjcn.png);
+}
+#apDiv16 {
+	position:absolute;
+	left:55px;
+	top:690px;
+	width:80px;
+	height:80px;
+	z-index:21;
+	background-image: url(imagens/N64gamesjcn.png);
+}
+#cube {
+	position:absolute;
+	left:190px;
+	top:790px;
+	width:80px;
+	height:80px;
+	z-index:22;
+	background-image: url(imagens/Cubegamesjcn.png);
+}
+#SnesNome2 {
+	position:absolute;
+	left:137px;
+	top:708px;
+	width:110px;
+	height:45px;
+	z-index:17;
+}
+#SnesNome3 {
+	position:absolute;
+	left:137px;
+	top:910px;
+	width:98px;
+	height:45px;
+	z-index:17;
+}
+#SnesNome4 {
+	position:absolute;
+	left:67px;
+	top:810px;
+	width:119px;
+	height:45px;
+	z-index:17;
+}
+#SnesNome5 {
+	position:absolute;
+	left:93px;
+	top:1209px;
+	width:98px;
+	height:45px;
+	z-index:17;
+}
+#apDiv12 {
+	position:absolute;
+	left:55px;
+	top:890px;
+	width:80px;
+	height:80px;
+	z-index:23;
+	background-image: url(imagens/mastergamesjcn.png);
+}
+#apDiv18 {
+	position:absolute;
+	left:190px;
+	top:990px;
+	width:80px;
+	height:80px;
+	z-index:24;
+	background-image: url(imagens/Megagamesjcn.png);
+}
+#apDiv19 {
+	position:absolute;
+	left:55px;
+	top:1090px;
+	width:80px;
+	height:80px;
+	z-index:25;
+	background-image: url(imagens/dreamcastgamesjcn.png);
+}
+#apDiv20 {
+	position:absolute;
+	left:190px;
+	top:1190px;
+	width:80px;
+	height:80px;
+	z-index:26;
+	background-image: url(imagens/Xboxgamesjcn.png);
+}
+#SnesNome6 {
+	position:absolute;
+	left:148px;
+	top:1310px;
+	width:99px;
+	height:45px;
+	z-index:17;
+}
+#SnesNome7 {
+	position:absolute;
+	left:137px;
+	top:1110px;
+	width:154px;
+	height:45px;
+	z-index:17;
+}
+#SnesNome8 {
+	position:absolute;
+	left:90px;
+	top:1013px;
+	width:98px;
+	height:45px;
+	z-index:17;
+}
+#SnesNome9 {
+	position:absolute;
+	left:80px;
+	top:1606px;
+	width:98px;
+	height:45px;
+	z-index:17;
+}
+#NDS {
+	position:absolute;
+	left:145px;
+	top:1512px;
+	width:112px;
+	height:45px;
+	z-index:17;
+}
+#SnesNome11 {
+	position:absolute;
+	left:100px;
+	top:1805px;
+	width:80px;
+	height:45px;
+	z-index:17;
+}
+#SnesNome12 {
+	position:absolute;
+	left:137px;
+	top:1709px;
+	width:80px;
+	height:45px;
+	z-index:17;
+}
+#apDiv17 {
+	position:absolute;
+	left:55px;
+	top:1290px;
+	width:80px;
+	height:80px;
+	z-index:27;
+	background-image: url(imagens/Psgamesjcn.png);
+}
+#apDiv21 {
+	position:absolute;
+	left:172px;
+	top:1390px;
+	width:100px;
+	height:80px;
+	z-index:28;
+	background-image: url(imagens/Ps2gamesjcn.png);
+}
+#apDiv22 {
+	position:absolute;
+	left:55px;
+	top:1490px;
+	width:80px;
+	height:80px;
+	z-index:29;
+	background-image: url(imagens/Arcadegamesjcn.png);
+}
+#NDS2 {
+	position:absolute;
+	left:72px;
+	top:1410px;
+	width:95px;
+	height:45px;
+	z-index:17;
+}
+#NDS3 {
+	position:absolute;
+	left:103px;
+	top:1334px;
+	width:80px;
+	height:45px;
+	z-index:17;
+}
+#NDS4 {
+	position:absolute;
+	left:102px;
+	top:1338px;
+	width:80px;
+	height:45px;
+	z-index:17;
+}
+#NDS5 {
+	position:absolute;
+	left:96px;
+	top:1331px;
+	width:80px;
+	height:45px;
+	z-index:17;
+}
+#NDS6 {	position:absolute;
+	left:105px;
+	top:1310px;
+	width:80px;
+	height:45px;
+	z-index:17;
+}
+#apDiv23 {
+	position:absolute;
+	left:190px;
+	top:1590px;
+	width:80px;
+	height:80px;
+	z-index:30;
+	background-image: url(imagens/Gboygamesjcn.png);
+}
+#apDiv24 {
+	position:absolute;
+	left:55px;
+	top:1690px;
+	width:80px;
+	height:80px;
+	z-index:31;
+	background-image: url(imagens/Dsgamesjcn.png);
+}
+#apDiv25 {
+	position:absolute;
+	left:190px;
+	top:1790px;
+	width:80px;
+	height:80px;
+	z-index:32;
+	background-image: url(imagens/Pspgamesjcn.png);
+}
+#apDiv26 {
+	position:absolute;
+	left:55px;
+	top:1890px;
+	width:80px;
+	height:80px;
+	z-index:33;
+	background-image: url(imagens/Atarigamesjcn.png);
+}
+#apDiv27 {
+	position:absolute;
+	left:190px;
+	top:1990px;
+	width:80px;
+	height:80px;
+	z-index:34;
+	background-image: url(imagens/Androidgamesjcn.png);
+}
+#SnesNome10 {
+	position:absolute;
+	left:98px;
+	top:625px;
+	width:103px;
+	height:45px;
+	z-index:17;
+}
+#SnesNome13 {
+	position:absolute;
+	left:64px;
+	top:2011px;
+	width:98px;
+	height:45px;
+	z-index:17;
+}
+#SnesNome14 {
+	position:absolute;
+	left:137px;
+	top:1907px;
+	width:98px;
+	height:45px;
+	z-index:17;
+}
+#SnesNome15 {position:absolute;
+	left:137px;
+	top:408px;
+	width:98px;
+	height:45px;
+	z-index:17;
+}
+#SnesNome16 {position:absolute;
+	left:137px;
+	top:408px;
+	width:98px;
+	height:45px;
+	z-index:17;
+}
+#apDiv28 {
+	position:absolute;
+	left:403px;
+	top:287px;
+	width:650px;
+	height:41px;
+	z-index:35;
+}
+#BarraMenu {
+	position:absolute;
+	left:383px;
+	top:287px;
+	width:650px;
+	height:41px;
+	z-index:10;
+}
+</style>
+<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<link href="SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+#apDiv29 {
+	position:absolute;
+	left:115px;
+	top:278px;
+	width:52px;
+	height:52px;
+	z-index:34;
+}
+#apDiv30 {
+	position:absolute;
+	left:200px;
+	top:278px;
+	width:52px;
+	height:52px;
+	z-index:36;
+}
+.MenuGame {
+	color:#000;
+	font-size: 16px;
+	font-weight: bold;
+}
+.MenuGame:hover {
+	color:#F00;
+	font-size: 16px;
+}
+#apDiv31 {
+	position:absolute;
+	left:994px;
+	top:370px;
+	width:93px;
+	height:300px;
+	z-index:37;
+	background-color: #000000;
+}
+#apDiv32 {
+	position:absolute;
+	left:0px;
+	top:240px;
+	width:1024px;
+	height:264px;
+	z-index:2;
+	background-color: #0080FF;
+}
+#apDiv33 {
+	position:absolute;
+	left:6px;
+	top:539px;
+	width:203px;
+	height:50px;
+	z-index:3;
+}
+.centro {
+	position:absolute;
+}
+body {
+	background-image: url(imagens/psd-background.jpg);
+	background-attachment: fixed;
+}
+#apDiv34 {
+	position:absolute;
+	left:7px;
+	top:576px;
+	width:202px;
+	height:1625px;
+	z-index:2;
+	background-color: #FFFFFF;
+}
+#apDiv35 {
+	position:absolute;
+	left:10px;
+	top:343px;
+	width:60px;
+	height:60px;
+	z-index:4;
+	background-image: url(imagens/cry.png);
+}
+#apDiv36 {
+	position:absolute;
+	left:123px;
+	top:413px;
+	width:60px;
+	height:60px;
+	z-index:4;
+	background-image: url(imagens/cred.png);
+}
+#apDiv37 {
+	position:absolute;
+	left:85px;
+	top:343px;
+	width:60px;
+	height:60px;
+	z-index:4;
+	background-image: url(imagens/fable.png);
+}
+#apDiv38 {
+	position:absolute;
+	left:160px;
+	top:343px;
+	width:60px;
+	height:60px;
+	z-index:3;
+	background-image: url(imagens/gta.png);
+}
+#apDiv39 {
+	position:absolute;
+	left:235px;
+	top:343px;
+	width:60px;
+	height:60px;
+	z-index:4;
+	background-image: url(imagens/hard.png);
+}
+#apDiv40 {
+	position:absolute;
+	left:47px;
+	top:412px;
+	width:60px;
+	height:60px;
+	z-index:5;
+	background-image: url(imagens/driver.png);
+}
+#apDiv41 {	position:absolute;
+	left:878px;
+	top:85px;
+	width:60px;
+	height:60px;
+	z-index:11;
+}
+#apDiv42 {	position:absolute;
+	left:801px;
+	top:85px;
+	width:60px;
+	height:60px;
+	z-index:12;
+}
+#apDiv43 {	position:absolute;
+	left:726px;
+	top:85px;
+	width:60px;
+	height:60px;
+	z-index:6;
+}
+#apDiv44 {	position:absolute;
+	left:725px;
+	top:85px;
+	width:60px;
+	height:60px;
+	z-index:6;
+}
+#apDiv45 {	position:absolute;
+	left:725px;
+	top:85px;
+	width:60px;
+	height:60px;
+	z-index:6;
+}
+#apDiv46 {
+	position:absolute;
+	left:0px;
+	top:337px;
+	width:1024px;
+	height:197px;
+	z-index:3;
+}
+</style>
+</head>
+
+<body>
+<table width="1024px" border="0" cellpadding="0" cellspacing="0" align="center">
+  <tr>
+<td>
+<div class="centro">
+  <div id="apDiv"><a href="https://twitter.com/"><img src="imagens/Twittergamesjcn.png" alt="" width="52" height="52" longdesc="http://twitter.com/" /></a></div>
+<div id="Fundo"></div>
+<div id="Topo"></div>
+<div id="Rodape"></div>
+<div id="Botoes"></div> 
+
+<div id="contrucao"><iframe src="http://megagames.com/game-content/fix/pc/all" name="x" width="980" height="1900" scrolling="Auto" frameborder="0"></iframe></div>
+<div id="InicioIcone"><img src="imagens/inicio5.png" width="120" height="120" /></div>
+<div id="InicioNome"><a href="index.html" class="corbranca"><span class="corPreta">Inicio</span></a></div>
+<div id="apDiv14"><img src="imagens/Crackgamesjcn.png" width="380" height="115" /></div>
+<div id="apDiv32"></div>
+<span class="33"></span><span class="33"></span>
+<div id="BarraMenu">
+  <ul id="MenuBar1" class="MenuBarHorizontal">
+    <li><a href="Emuladores.html">Emuladores</a>      </li>
+    <li><a href="Roms.html">Roms</a></li>
+    <li><a href="PcGames.html">PC-Games</a>      </li>
+    <li><a href="Flash_Games.html">Flash-Games</a>      </li>
+    <li><a href="Contato.html">CONTATO</a></li>
+  </ul>
+</div>
+<div id="apDiv29"><a href="https://www.facebook.com.br"><img src="imagens/Facebookgamesjcn.png" alt="" width="52" height="52" /></a></div>
+<div id="apDiv30"><a href="https://plus.google.com"><img src="imagens/googlemaisgamesjcn.png" alt="" width="52" height="52" longdesc="https://plus.google.com" /></a></div>
+<script type="text/javascript">
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"SpryAssets/SpryMenuBarDownHover.gif", imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+</script>
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>

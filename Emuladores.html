@@ -1,0 +1,1093 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>GamesJCN-Emulação</title>
+<style type="text/css">
+#Fundo {
+	position:absolute;
+	width:1024px;
+	height:1985px;
+	z-index:0;
+	left: 0px;
+	top: 15px;
+	background-color: #0080FF;
+	visibility: visible;
+}
+#Topo {
+	position:absolute;
+	left:0px;
+	top:6px;
+	width:1024px;
+	height:268px;
+	z-index:1;
+	background-image: url(imagens/Topo_gamesjcn.png);
+	visibility: visible;
+}
+#MenuLateralbarra {
+	position:absolute;
+	left:30px;
+	top:282px;
+	width:269px;
+	height:1710px;
+	z-index:2;
+	background-image: url(imagens/menu.jpg);
+	visibility: visible;
+}
+#Rodape {
+	position:absolute;
+	left:0px;
+	top:1997px;
+	width:1024px;
+	height:64px;
+	z-index:10;
+	background-image: url(imagens/barramenutra.png);
+	visibility: visible;
+}
+#Botoes {
+	position:absolute;
+	left:311px;
+	top:296px;
+	width:726px;
+	height:16px;
+	z-index:4;
+	background-image: url(imagens/barracima.png);
+	visibility: visible;
+}
+
+#contrucao {
+	position:absolute;
+	left:297px;
+	top:507px;
+	width:741px;
+	height:1492px;
+	z-index:5;
+	visibility: visible;
+}
+#Roms {
+	position:absolute;
+	left:772px;
+	top:278px;
+	width:115px;
+	height:50px;
+	z-index:6;
+}
+#Botaomenu {
+	position:absolute;
+	left:45px;
+	top:631px;
+	width:190px;
+	height:27px;
+	z-index:6;
+}
+#Botaomenu2 {
+	position:absolute;
+	left:31px;
+	top:344px;
+	width:226px;
+	height:58px;
+	z-index:10;
+	background-color: #FFFFCC;
+}
+#Botaomenu {
+	position:absolute;
+	left:13px;
+	top:276px;
+	width:300px;
+	height:100px;
+	z-index:10;
+	background-image: url(imagens/botaogamesjcn.png);
+	visibility: visible;
+}
+#Botaomenu4 {
+	position:absolute;
+	left:47px;
+	top:828px;
+	width:190px;
+	height:27px;
+	z-index:6;
+	background-color: #FFFFCC;
+}
+#Botaomenu5 {	position:absolute;
+	left:53px;
+	top:482px;
+	width:190px;
+	height:27px;
+	z-index:6;
+	background-color: #FFFFCC;
+}
+#Botaomenu6 {	position:absolute;
+	left:45px;
+	top:631px;
+	width:190px;
+	height:27px;
+	z-index:6;
+	background-color: #FFFFCC;
+}
+#Botaomenu7 {	position:absolute;
+	left:45px;
+	top:631px;
+	width:190px;
+	height:27px;
+	z-index:6;
+	background-color: #FFFFCC;
+}
+#Botaomenu8 {	position:absolute;
+	left:45px;
+	top:631px;
+	width:190px;
+	height:27px;
+	z-index:6;
+	background-color: #FFFFCC;
+}
+#apDiv1 {
+	position:absolute;
+	left:450px;
+	top:302px;
+	width:115px;
+	height:40px;
+	z-index:11;
+}
+#InicioIcone {
+	position:absolute;
+	left:277px;
+	top:243px;
+	width:120px;
+	height:120px;
+	z-index:11;
+	visibility: visible;
+}
+#apDiv4 {	position:absolute;
+	left:310px;
+	top:303px;
+	width:115px;
+	height:39px;
+	z-index:11;
+}
+#apDiv5 {
+	position:absolute;
+	left:1276px;
+	top:103px;
+	width:275px;
+	height:373px;
+	z-index:12;
+}
+#Emuladores {
+	position:absolute;
+	left:434px;
+	top:273px;
+	width:130px;
+	height:60px;
+	z-index:6;
+	visibility: visible;
+	background-image: url(imagens/barrinha.png);
+}
+#apDiv6 {	position:absolute;
+	left:478px;
+	top:278px;
+	width:115px;
+	height:50px;
+	z-index:6;
+}
+#Roms {
+	position:absolute;
+	left:590px;
+	top:323px;
+	width:130px;
+	height:60px;
+	z-index:6;
+	visibility: visible;
+	background-image: url(imagens/barrinha.png);
+}
+#Contato {
+	position:absolute;
+	left:902px;
+	top:273px;
+	width:130px;
+	height:60px;
+	z-index:6;
+	background-image: url(imagens/barrinha.png);
+	visibility: visible;
+}
+#Flashgames {
+	position:absolute;
+	left:746px;
+	top:273px;
+	width:130px;
+	height:60px;
+	z-index:6;
+	background-image: url(imagens/barrinha.png);
+	visibility: visible;
+}
+#Inicio strong {
+	font-size: 18px;
+	color: #00C;
+}
+#Nomeinicio {
+	position:absolute;
+	left:335px;
+	top:280px;
+	width:84px;
+	height:55px;
+	z-index:12;
+	font-size: 36px;
+}
+#EmuladoresNome {
+	position:absolute;
+	left:459px;
+	top:290px;
+	width:107px;
+	height:27px;
+	z-index:13;
+	font-size: 23px;
+	color: #FFF;
+	visibility: visible;
+}
+#apDiv {
+	position:absolute;
+	left:30px;
+	top:278px;
+	width:52px;
+	height:52px;
+	z-index:13;
+	font-size: 23px;
+	color: #FFF;
+}
+#RomsNome {
+	position:absolute;
+	left:634px;
+	top:290px;
+	width:76px;
+	height:27px;
+	z-index:13;
+	font-size: 23px;
+	color: #FFF;
+}
+#apDiv7 {	position:absolute;
+	left:470px;
+	top:290px;
+	width:87px;
+	height:27px;
+	z-index:13;
+	font-size: 23px;
+	color: #FFF;
+}
+#InicioNome {
+	position:absolute;
+	left:295px;
+	top:280px;
+	width:90px;
+	height:42px;
+	z-index:14;
+	font-weight: bold;
+	font-size: 66px;
+}
+a {
+	color:#090;
+	text-decoration: none;
+	font-size: 15px;
+}
+a:hover {
+	color:#F00;
+	font-size: 15px;
+}
+.Inicio {
+	color:#000;
+	font-size: 33px;
+}
+.Inicio:hover {
+	color:#0080FF;
+	font-size: 35px;
+}
+#apDiv2 {
+	position:absolute;
+	left:115px;
+	top:278px;
+	width:52px;
+	height:52px;
+	z-index:15;
+}
+#apDiv3 {
+	position:absolute;
+	left:200px;
+	top:278px;
+	width:52px;
+	height:52px;
+	z-index:15;
+}
+#apDiv8 {
+	position:absolute;
+	left:632px;
+	top:321px;
+	width:59px;
+	height:50px;
+	z-index:16;
+}
+#apDiv9 {
+	position:absolute;
+	left:764px;
+	top:280px;
+	width:108px;
+	height:53px;
+	z-index:17;
+}
+#apDiv10 {
+	position:absolute;
+	left:931px;
+	top:280px;
+	width:84px;
+	height:45px;
+	z-index:18;
+}
+#apDiv11 {
+	position:absolute;
+	left:74px;
+	top:473px;
+	width:120px;
+	height:83px;
+	z-index:19;
+}
+#SnesNome {
+	position:absolute;
+	left:115px;
+	top:507px;
+	width:80px;
+	height:45px;
+	z-index:17;
+}
+#apDiv13 {
+	position:absolute;
+	left:55px;
+	top:390px;
+	width:80px;
+	height:80px;
+	z-index:18;
+	background-image: url(imagens/Nesgamesjcn.png);
+}
+#apDiv14 {
+	position:absolute;
+	left:318px;
+	top:374px;
+	width:380px;
+	height:115px;
+	z-index:5;
+}
+#apDiv15 {
+	position:absolute;
+	left:190px;
+	top:490px;
+	width:80px;
+	height:80px;
+	z-index:20;
+	background-image: url(imagens/Snesgamesjcn.png);
+}
+#apDiv16 {
+	position:absolute;
+	left:55px;
+	top:590px;
+	width:80px;
+	height:80px;
+	z-index:21;
+	background-image: url(imagens/N64gamesjcn.png);
+}
+#cube {
+	position:absolute;
+	left:190px;
+	top:690px;
+	width:80px;
+	height:80px;
+	z-index:22;
+	background-image: url(imagens/Cubegamesjcn.png);
+}
+#SnesNome2 {
+	position:absolute;
+	left:137px;
+	top:608px;
+	width:110px;
+	height:45px;
+	z-index:17;
+}
+#SnesNome3 {
+	position:absolute;
+	left:137px;
+	top:810px;
+	width:98px;
+	height:45px;
+	z-index:17;
+}
+#SnesNome4 {
+	position:absolute;
+	left:67px;
+	top:710px;
+	width:119px;
+	height:45px;
+	z-index:17;
+}
+#SnesNome5 {
+	position:absolute;
+	left:95px;
+	top:1109px;
+	width:98px;
+	height:45px;
+	z-index:17;
+}
+#apDiv12 {
+	position:absolute;
+	left:55px;
+	top:790px;
+	width:80px;
+	height:80px;
+	z-index:23;
+	background-image: url(imagens/mastergamesjcn.png);
+}
+#apDiv18 {
+	position:absolute;
+	left:190px;
+	top:890px;
+	width:80px;
+	height:80px;
+	z-index:24;
+	background-image: url(imagens/Megagamesjcn.png);
+}
+#apDiv19 {
+	position:absolute;
+	left:57px;
+	top:990px;
+	width:80px;
+	height:80px;
+	z-index:25;
+	background-image: url(imagens/dreamcastgamesjcn.png);
+}
+#apDiv20 {
+	position:absolute;
+	left:192px;
+	top:1090px;
+	width:80px;
+	height:80px;
+	z-index:26;
+	background-image: url(imagens/Xboxgamesjcn.png);
+}
+#SnesNome6 {
+	position:absolute;
+	left:150px;
+	top:1210px;
+	width:99px;
+	height:45px;
+	z-index:17;
+}
+#SnesNome7 {
+	position:absolute;
+	left:139px;
+	top:1010px;
+	width:154px;
+	height:45px;
+	z-index:17;
+}
+#SnesNome8 {
+	position:absolute;
+	left:90px;
+	top:913px;
+	width:98px;
+	height:45px;
+	z-index:17;
+}
+#SnesNome9 {
+	position:absolute;
+	left:82px;
+	top:1506px;
+	width:98px;
+	height:45px;
+	z-index:17;
+}
+#NDS {
+	position:absolute;
+	left:147px;
+	top:1412px;
+	width:112px;
+	height:45px;
+	z-index:17;
+}
+#SnesNome11 {
+	position:absolute;
+	left:100px;
+	top:1705px;
+	width:80px;
+	height:45px;
+	z-index:17;
+}
+#SnesNome12 {
+	position:absolute;
+	left:139px;
+	top:1609px;
+	width:80px;
+	height:45px;
+	z-index:17;
+}
+#apDiv17 {
+	position:absolute;
+	left:57px;
+	top:1190px;
+	width:80px;
+	height:80px;
+	z-index:27;
+	background-image: url(imagens/Psgamesjcn.png);
+}
+#apDiv21 {
+	position:absolute;
+	left:174px;
+	top:1290px;
+	width:100px;
+	height:80px;
+	z-index:28;
+	background-image: url(imagens/Ps2gamesjcn.png);
+}
+#apDiv22 {
+	position:absolute;
+	left:57px;
+	top:1390px;
+	width:80px;
+	height:80px;
+	z-index:29;
+	background-image: url(imagens/Arcadegamesjcn.png);
+}
+#NDS2 {
+	position:absolute;
+	left:74px;
+	top:1310px;
+	width:95px;
+	height:45px;
+	z-index:17;
+}
+#NDS3 {
+	position:absolute;
+	left:103px;
+	top:1334px;
+	width:80px;
+	height:45px;
+	z-index:17;
+}
+#NDS4 {
+	position:absolute;
+	left:102px;
+	top:1338px;
+	width:80px;
+	height:45px;
+	z-index:17;
+}
+#NDS5 {
+	position:absolute;
+	left:96px;
+	top:1331px;
+	width:80px;
+	height:45px;
+	z-index:17;
+}
+#NDS6 {	position:absolute;
+	left:105px;
+	top:1310px;
+	width:80px;
+	height:45px;
+	z-index:17;
+}
+#apDiv23 {
+	position:absolute;
+	left:192px;
+	top:1490px;
+	width:80px;
+	height:80px;
+	z-index:30;
+	background-image: url(imagens/Gboygamesjcn.png);
+}
+#apDiv24 {
+	position:absolute;
+	left:55px;
+	top:1590px;
+	width:80px;
+	height:80px;
+	z-index:31;
+	background-image: url(imagens/Dsgamesjcn.png);
+}
+#apDiv25 {
+	position:absolute;
+	left:190px;
+	top:1690px;
+	width:80px;
+	height:80px;
+	z-index:32;
+	background-image: url(imagens/Pspgamesjcn.png);
+}
+#apDiv26 {
+	position:absolute;
+	left:55px;
+	top:1790px;
+	width:80px;
+	height:80px;
+	z-index:33;
+	background-image: url(imagens/Atarigamesjcn.png);
+}
+#apDiv27 {
+	position:absolute;
+	left:190px;
+	top:1890px;
+	width:80px;
+	height:80px;
+	z-index:34;
+	background-image: url(imagens/Androidgamesjcn.png);
+}
+#SnesNome10 {position:absolute;
+	left:137px;
+	top:408px;
+	width:98px;
+	height:45px;
+	z-index:17;
+}
+#SnesNome13 {
+	position:absolute;
+	left:64px;
+	top:1911px;
+	width:98px;
+	height:45px;
+	z-index:17;
+}
+#SnesNome14 {
+	position:absolute;
+	left:137px;
+	top:1807px;
+	width:98px;
+	height:45px;
+	z-index:17;
+}
+#SnesNome15 {position:absolute;
+	left:137px;
+	top:408px;
+	width:98px;
+	height:45px;
+	z-index:17;
+}
+#SnesNome16 {position:absolute;
+	left:137px;
+	top:408px;
+	width:98px;
+	height:45px;
+	z-index:17;
+}
+#apDiv28 {
+	position:absolute;
+	left:31px;
+	top:547px;
+	width:420px;
+	height:320px;
+	z-index:5;
+	background-image: url(imagens/Caixapostgamesjcn.png);
+}
+#apDiv29 {
+	position:absolute;
+	left:572px;
+	top:547px;
+	width:420px;
+	height:320px;
+	z-index:5;
+	background-image: url(imagens/Caixapostgamesjcn.png);
+}
+#apDiv30 {
+	position:absolute;
+	left:40px;
+	top:627px;
+	width:170px;
+	height:140px;
+	z-index:6;
+}
+#apDiv31 {
+	position:absolute;
+	left:581px;
+	top:627px;
+	width:170px;
+	height:140px;
+	z-index:6;
+}
+#BarraMenu {
+	position:absolute;
+	left:383px;
+	top:287px;
+	width:650px;
+	height:41px;
+	z-index:10;
+}
+#ScrowbarMame {
+	color: #000;
+	background-color: #FFF;
+	height: 230px;
+	width: 220px;
+	overflow: auto;
+	visibility: visible;
+	left: 5px;
+	right: 5px;
+}
+#ScrowbarSnes {
+	color: #000;
+	background-color: #FFF;
+	height: 230px;
+	width: 220px;
+	left: 5px;
+	right: 5px;
+	overflow: auto;
+	visibility: visible;
+}
+#ScrowbarPcsx2 {
+	color: #000;
+	background-color: #FFF;
+	height: 230px;
+	width: 220px;
+	overflow: auto;
+	visibility: visible;
+	left: 5px;
+	right: 5px;
+}
+#ScrowbarDolphin {
+	color: #000;
+	background-color: #FFF;
+	height: 230px;
+	width: 220px;
+	overflow: auto;
+	visibility: visible;
+	left: 5px;
+	right: 5px;
+}
+</style>
+<style type="text/css">
+#Botoes2 {
+	position:absolute;
+	left:0px;
+	top:274px;
+	width:1024px;
+	height:64px;
+	z-index:4;
+	background-image: url(imagens/barramenutra.png);
+	visibility: visible;
+}
+#apDiv32 {	position:absolute;
+	left:50px;
+	top:278px;
+	width:52px;
+	height:52px;
+	z-index:34;
+}
+#apDiv33 {	position:absolute;
+	left:135px;
+	top:278px;
+	width:52px;
+	height:52px;
+	z-index:35;
+}
+#apDiv34 {	position:absolute;
+	left:220px;
+	top:278px;
+	width:52px;
+	height:52px;
+	z-index:36;
+}
+.centro {
+	position:absolute;
+}
+body {
+	background-image: url(imagens/psd-background.jpg);
+	background-attachment: fixed;
+}
+</style>
+<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<link href="SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+#apDiv35 {
+	position:absolute;
+	left:221px;
+	top:624px;
+	width:225px;
+	height:250px;
+	z-index:10;
+}
+#apDiv36 {
+	position:absolute;
+	left:763px;
+	top:624px;
+	width:225px;
+	height:250px;
+	z-index:10;
+}
+#apDiv37 {
+	position:absolute;
+	left:39px;
+	top:806px;
+	width:50px;
+	height:40px;
+	z-index:10;
+}
+#apDiv38 {
+	position:absolute;
+	left:94px;
+	top:824px;
+	width:100px;
+	height:24px;
+	z-index:10;
+}
+#apDiv39 {
+	position:absolute;
+	left:580px;
+	top:806px;
+	width:50px;
+	height:40px;
+	z-index:10;
+}
+#apDiv40 {
+	position:absolute;
+	left:631px;
+	top:824px;
+	width:100px;
+	height:24px;
+	z-index:6;
+}
+.PostagensBar {
+	color:#F60;
+	font-size: 24px;
+	font-style: normal;
+	text-decoration: underline;
+}
+.PostagensBar:hover {
+	color:#F00;
+	font-size: 24px;
+	font-weight: normal;
+}
+.DownloadPost {
+	color:#090;
+	font-size: 18px;
+}
+.DownloadPost:hover {
+	color:#F00;
+	font-size: 18px;
+	font-weight: normal;
+}
+#apDiv41 {
+	position:absolute;
+	left:64px;
+	top:565px;
+	width:365px;
+	height:30px;
+	z-index:11;
+}
+#apDiv42 {
+	position:absolute;
+	left:630px;
+	top:565px;
+	width:326px;
+	height:30px;
+	z-index:11;
+}
+.TextoDownloader {	color:#FFF;
+	font-size: 32px;
+}
+#apDiv43 {
+	position:absolute;
+	left:31px;
+	top:900px;
+	width:420px;
+	height:320px;
+	z-index:1;
+	background-image: url(imagens/Caixapostgamesjcn.png);
+}
+#apDiv44 {
+	position:absolute;
+	left:572px;
+	top:900px;
+	width:420px;
+	height:320px;
+	z-index:2;
+	background-image: url(imagens/Caixapostgamesjcn.png);
+}
+#apDiv45 {
+	position:absolute;
+	left:49px;
+	top:916px;
+	width:397px;
+	height:30px;
+	z-index:2;
+}
+#apDiv46 {
+	position:absolute;
+	left:40px;
+	top:981px;
+	width:170px;
+	height:140px;
+	z-index:2;
+}
+#apDiv47 {
+	position:absolute;
+	left:39px;
+	top:1161px;
+	width:50px;
+	height:40px;
+	z-index:3;
+}
+#apDiv48 {
+	position:absolute;
+	left:94px;
+	top:1176px;
+	width:100px;
+	height:24px;
+	z-index:4;
+}
+#apDiv49 {
+	position:absolute;
+	left:221px;
+	top:980px;
+	width:225px;
+	height:251px;
+	z-index:5;
+}
+#apDiv50 {
+	position:absolute;
+	left:634px;
+	top:917px;
+	width:313px;
+	height:30px;
+	z-index:5;
+}
+#apDiv51 {
+	position:absolute;
+	left:581px;
+	top:986px;
+	width:170px;
+	height:140px;
+	z-index:5;
+}
+#apDiv52 {
+	position:absolute;
+	left:763px;
+	top:980px;
+	width:225px;
+	height:250px;
+	z-index:3;
+}
+#apDiv53 {
+	position:absolute;
+	left:580px;
+	top:1161px;
+	width:50px;
+	height:40px;
+	z-index:4;
+}
+#apDiv54 {
+	position:absolute;
+	left:629px;
+	top:1161px;
+	width:130px;
+	height:24px;
+	z-index:5;
+}
+#apDiv55 {
+	position:absolute;
+	left:629px;
+	top:1187px;
+	width:130px;
+	height:24px;
+	z-index:5;
+}
+</style>
+</head>
+
+<body>
+<table width="1024px" border="0" cellpadding="0" cellspacing="0" align="center">
+<tr>
+<td>
+<div class="centro">
+<div class="PostagensBar" id="apDiv50"><a href="Paginas/Postagens/Dolphin 3.0 Emulador.html" class="PostagensBar">Dolphin Emulador Cube e Wii</a></div>
+<div id="apDiv51"><img src="imagens/Dolphingamesjcn.jpg" width="170" height="140" /></div>
+<div id="apDiv52">
+  <div id="ScrowbarDolphin">
+  <font color="#FF0000">Emulador Game-Cube e Nintendo Wii</font>
+  Muitos usuários se perguntam como ficariam os jogos do Nintendo Wii caso o console oferecesse suporte a alta definição. Afinal, ele é o único videogame da última geração que exibe imagens com resolução superior a 480p.
+
+Se você é um proprietário do Nintendo Wii ou mesmo de seu antecessor, o GameCube, experimente emular os jogos no PC com a ajuda do Dolphin. Além de apresentar uma grande compatibilidade com diversos títulos dos dois consoles, ele oferece gráficos ainda melhores e alcança a cobiçada resolução Full HD.
+O Wii como você nunca viu 
+
+Dolphin simula uma biblioteca de jogos em seu computador. Para tal, mova todos os arquivos ISO (para os jogos do Nintendo Wii) e WADS (GameCube) para um mesmo diretório do seu computador. Depois, clique na opção "Browse" da janela principal do emulador e aponte para a pasta onde os jogos se encontram. O programa localiza os games automaticamente, basta clicar duas vezes sobre eles para executá-los.
+
+
+<font color="#FF0000">Configuração </font>
+
+Caso já tenha experimentado outros emuladores para os consoles mais atuais, saberá que a configuração pode ser trabalhosa. Bem ao contrário, Dolphin já acompanha todos os plugins de que necessita e possui versões dedicadas a diferentes sistemas operacionais. Caso as configurações iniciais não funcionem ou rodem de maneira insatisfatória, clique na opção "Config" e, a seguir, na aba "Plugins".
+  </div>
+</div>
+<div id="apDiv53"><img src="imagens/download-logo.gif" width="50" height="40" /></div>
+<div id="apDiv54"><a href="http://dolphin-emu.googlecode.com/files/dolphin-3.0-win32.exe" class="a">Download 32Bits</a></div>
+<div id="apDiv55"><a href="http://dolphin-emu.googlecode.com/files/dolphin-3.0-win64.exe" class="a">Download 64Bits</a></div>
+<div class="PostagensBar" id="apDiv45"><a href="Paginas/Postagens/PCSX2 0.9.8 + Bios.html" class="PostagensBar">PCSX2 0.9.8 + Bios - Emulador de PS2</a></div>
+<div id="apDiv46"><img src="imagens/PCSX2emu.png" width="170" height="140" /></div>
+<div id="apDiv47"><a href="http://www.4shared.com/rar/BfNAfHS5/PCSX2-098-wwwGamesjcnx10mx.html?" target="_blank"><img src="imagens/download-logo.gif" width="50" height="40" /></a></div>
+<div id="apDiv48"><a href="http://www.4shared.com/rar/BfNAfHS5/PCSX2-098-wwwGamesjcnx10mx.html?" target="_blank" class="DownloadPost">Download</a></div>
+<div id="apDiv49">
+  <div id="ScrowbarPcsx2">
+  <font color="#FF0000">Playstation 2</font>, o segundo console de videogame da Sony, foi lançado em 2000 e explodiu em sucesso no mundo todo rapidamente. Além de trazer o nome Playstation, que há alguns anos já era considerado o melhor videogame do mercado, esta segunda versão não ficava atrás da primeira, e também dava um banho de superioridade na concorrência.
+
+O sucesso do console foi muito superior ao dos concorrentes Game Cube e Dreamcast, que juntos venderam menos de um terço do número de unidades de Playstation 2 vendidas mundialmente. Dominando todo o mercado, o console logo tornou-se extremamente popular. 
+PCSX2 
+
+PCSX2 é um emulador de Playstation 2 que visa permitir aos fãs do videogame jogá-lo no computador. Entretanto, para poder utilizá-lo é necessário ter em seu computador o arquivo da firmware do videogame.
+
+Como a firmware é o que identifica o videogame, e cada console vem com sua própria firmware, um usuário só poderá ter em seu computador a firmware relativa ao console de sua propriedade. Manter firmwares de consoles alheios em seu computador consiste crime de pirataria com punição prevista na legislação.
+  </div>
+</div>
+<div id="apDiv43"></div>
+<div id="apDiv44"></div>
+<div id="apDiv41"><a href="Paginas/Postagens/MAME Brasil Advanced 32 - 0.122.html" class="TextoDownloader"><span class="PostagensBar">MAME Brasil Advanced 32 - 0.122</span></a></div>
+<div id="apDiv42"><a href="Paginas/Postagens/Zsnes 1.51.html" class="TextoDownloader"><span class="PostagensBar">Zsnes 1.51 - Emulador de Snes</span></a></div>
+<div id="apDiv35">
+  <div id="ScrowbarMame">
+  <p><font color="red">O MAME</font> — Multiple Arcade Machine Emulator (Emulador de Múltiplas Máquinas de Arcade) — é o mais famoso emulador de jogos arcades (também conhecidos popularmente no Brasil como fliperamas). São mais de 9000 jogos suportados, incluindo os clássicos que marcaram época nas décadas de 70, 80 e 90.</p>
+    <p>Para que um jogo possa ser emulado no MAME é necessária a utilização de um arquivo chamado ROM, o conjunto de dados extraídos do chip original do arcade. Com estes dados, o emulador comporta-se como o hardware e reproduz o conteúdo da ROM no computador. Sendo assim, os jogos emulados não são meras simulações, mas sim cópias dos originais encontrados em fliperamas.</p>
+    <p>Fãs de arcades que ficavam horas e horas em frente a uma máquina de fliperama agora podem se divertir em seus próprios PCs! O propósito do programa é preservar a história destes arcades, impedindo que sejam esquecidos ou perdidos com o avanço da tecnologia.</p>
+  </div>
+</div>
+<div id="apDiv36">
+  <div id="ScrowbarSnes">
+  <p>Compatível com praticamente todos os jogos já lançados para  o <font color="#FF0000">Super Nintendo</font> e com ótimas opções de personalização de imagem ou controle,  <font color="#FF0000">ZSNES</font> é a melhor opção para relembrar o quanto era divertido a <font color="#FF0000">época dos 16  bits</font>;<br />
+      Em se tratando de Super Nintendo, o ZSNES é o emulador mais utilizado pelo  pessoal que gosta de reviver aqueles <font color="#FF0000">games clássicos dos anos 90</font>. Também  pudera, pois este emulador oferece uma enorme facilidade de uso, além de  recursos extras que o tornam o número um entre os concorrentes.<br />
+      E como relembrar os velhos tempos se aquele seu console  empoeirado já não funciona mais? Simples, com o ZSNES você pode emular jogos do  Super Nintendo em seu computador e relembrar de clássicos como Super Mario  World, Rock´n Roll Racing, Top Gear 2 e muitos outros.<br />
+      O ZSNES possui muitas funcionalidades que auxiliam e  facilitam a vida do jogador, como capacidade de salvar o jogo no ponto que ele  está sendo jogado, suporte para anti-aliasing (filtro para suavizar ou  &ldquo;lapidar&rdquo; formas) e Smoothing (esfumaçar, opção para que o jogador não  visualize os frames quadrados), além da possibilidade de tirar screenshots e/ou  gravar filmes do jogo que está sendo emulado.</p>
+  </div>
+</div>
+<div id="apDiv37"><a href="http://gamesjcn.x10.mx/Downloads/Emuladores/MAME Brasil Advanced 32 - 0.122.rar"><img src="imagens/download-logo.gif" width="50" height="40" /></a></div>
+<div class="DownloadPost" id="apDiv38"><a href="http://gamesjcn.x10.mx/Downloads/Emuladores/MAME Brasil Advanced 32 - 0.122.rar" class="DownloadPost">Download</a></div>
+<div id="apDiv39"><a href="http://gamesjcn.x10.mx/Downloads/Emuladores/zsnesw151.zip"><img src="imagens/download-logo.gif" width="50" height="40" /></a></div>
+<div class="DownloadPost" id="apDiv40"><a href="http://gamesjcn.x10.mx/Downloads/Emuladores/zsnesw151.zip" class="DownloadPost">Download</a></div>
+<div id="Fundo"></div>
+<div id="Topo"></div>
+<div id="Rodape"></div>
+<div id="InicioIcone"><img src="imagens/inicio5.png" width="120" height="120" /></div>
+<div id="InicioNome"><a href="index.html" class="corbranca"><span class="corPreta"><span class="Inicio">Inicio</span></span></a></div>
+<div id="apDiv14"><img src="imagens/Emuladoresgamesjcn.png" width="380" height="115" /></div>
+<div id="apDiv28"></div>
+<div id="apDiv29"></div>
+<div id="apDiv30"><img src="imagens/mame_br.jpg" width="170" height="140" /></div>
+<div id="apDiv31"><img src="imagens/Snesgamesjcn.jpg" width="170" height="140" /></div>
+<span class="33"></span><span class="33"></span>
+<div id="BarraMenu">
+  <ul id="MenuBar1" class="MenuBarHorizontal">
+    <li><a href="Emuladores.html" class="MenuBarHorizontal">Emuladores</a></li>
+    <li><a href="Roms.html">Roms</a></li>
+    <li><a href="PcGames.html">PC-Games</a></li>
+    <li><a href="Flash_Games.html">Flash-Games</a></li>
+    <li><a href="Contato.html">CONTATO</a></li>
+  </ul>
+</div>
+<div id="Botoes2"></div>
+<div id="apDiv"><a href="https://twitter.com/"><img src="imagens/Twittergamesjcn.png" alt="" width="52" height="52" longdesc="http://twitter.com/" /></a></div>
+<div id="apDiv2"><a href="https://www.facebook.com.br"><img src="imagens/Facebookgamesjcn.png" alt="" width="52" height="52" /></a></div>
+<div id="apDiv3"><a href="https://plus.google.com"><img src="imagens/googlemaisgamesjcn.png" alt="" width="52" height="52" longdesc="https://plus.google.com" /></a></div>
+</div>
+</td>
+</tr>
+</table>
+<script type="text/javascript">
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"SpryAssets/SpryMenuBarDownHover.gif", imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+</script>
+</body>
+</html>
