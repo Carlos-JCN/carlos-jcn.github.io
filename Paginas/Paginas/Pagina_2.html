@@ -1,0 +1,865 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>GamesJCN-Emulação</title>
+<style type="text/css">
+#Fundo {
+	position:absolute;
+	width:1024px;
+	height:2530px;
+	z-index:0;
+	left: 0px;
+	top: 15px;
+	visibility: visible;
+	background-color: #0080FF;
+}
+#Topo {
+	position:absolute;
+	left:0px;
+	top:6px;
+	width:1024px;
+	height:268px;
+	z-index:1;
+	background-image: url(imagens/Topo_gamesjcn.png);
+	visibility: visible;
+}
+#MenuLateralbarra {
+	position:absolute;
+	left:10px;
+	top:429px;
+	width:266px;
+	height:398px;
+	z-index:2;
+	visibility: visible;
+	background-color: #FFFFFF;
+}
+#Rodape {
+	position:absolute;
+	left:0px;
+	top:2480px;
+	width:1024px;
+	height:64px;
+	z-index:3;
+	background-image: url(imagens/barramenutra.png);
+	visibility: visible;
+}
+#Botoes {
+	position:absolute;
+	left:311px;
+	top:296px;
+	width:726px;
+	height:16px;
+	z-index:4;
+	background-image: url(imagens/barracima.png);
+	visibility: visible;
+}
+
+#contrucao {
+	position:absolute;
+	left:242px;
+	top:455px;
+	width:458px;
+	height:393px;
+	z-index:5;
+	background-image: url(imagens/carta.png);
+	visibility: visible;
+}
+#Roms {
+	position:absolute;
+	left:772px;
+	top:278px;
+	width:115px;
+	height:50px;
+	z-index:6;
+}
+#Botaomenu {
+	position:absolute;
+	left:45px;
+	top:631px;
+	width:190px;
+	height:27px;
+	z-index:6;
+}
+#Botaomenu2 {
+	position:absolute;
+	left:31px;
+	top:344px;
+	width:226px;
+	height:58px;
+	z-index:10;
+	background-color: #FFFFCC;
+}
+#Botaomenu {
+	position:absolute;
+	left:9px;
+	top:362px;
+	width:269px;
+	height:89px;
+	z-index:3;
+	visibility: visible;
+}
+#Botaomenu4 {
+	position:absolute;
+	left:47px;
+	top:828px;
+	width:190px;
+	height:27px;
+	z-index:6;
+	background-color: #FFFFCC;
+}
+#Botaomenu5 {	position:absolute;
+	left:53px;
+	top:482px;
+	width:190px;
+	height:27px;
+	z-index:6;
+	background-color: #FFFFCC;
+}
+#Botaomenu6 {	position:absolute;
+	left:45px;
+	top:631px;
+	width:190px;
+	height:27px;
+	z-index:6;
+	background-color: #FFFFCC;
+}
+#Botaomenu7 {	position:absolute;
+	left:45px;
+	top:631px;
+	width:190px;
+	height:27px;
+	z-index:6;
+	background-color: #FFFFCC;
+}
+#Botaomenu8 {	position:absolute;
+	left:45px;
+	top:631px;
+	width:190px;
+	height:27px;
+	z-index:6;
+	background-color: #FFFFCC;
+}
+#apDiv1 {
+	position:absolute;
+	left:450px;
+	top:302px;
+	width:115px;
+	height:40px;
+	z-index:11;
+}
+#InicioIcone {
+	position:absolute;
+	left:277px;
+	top:243px;
+	width:120px;
+	height:120px;
+	z-index:11;
+	visibility: visible;
+}
+#apDiv4 {	position:absolute;
+	left:310px;
+	top:303px;
+	width:115px;
+	height:39px;
+	z-index:11;
+}
+#apDiv5 {
+	position:absolute;
+	left:1276px;
+	top:103px;
+	width:275px;
+	height:373px;
+	z-index:12;
+}
+#Emuladores {
+	position:absolute;
+	left:434px;
+	top:273px;
+	width:130px;
+	height:60px;
+	z-index:6;
+	visibility: visible;
+	background-image: url(imagens/barrinha.png);
+}
+#apDiv6 {	position:absolute;
+	left:478px;
+	top:278px;
+	width:115px;
+	height:50px;
+	z-index:6;
+}
+#Roms {
+	position:absolute;
+	left:590px;
+	top:273px;
+	width:130px;
+	height:60px;
+	z-index:6;
+	visibility: visible;
+	background-image: url(imagens/barrinha.png);
+}
+#Contato {
+	position:absolute;
+	left:590px;
+	top:323px;
+	width:130px;
+	height:60px;
+	z-index:6;
+	background-image: url(imagens/barrinha.png);
+	visibility: visible;
+}
+#Flashgames {
+	position:absolute;
+	left:746px;
+	top:273px;
+	width:130px;
+	height:60px;
+	z-index:6;
+	background-image: url(imagens/barrinha.png);
+	visibility: visible;
+}
+#Inicio strong {
+	font-size: 18px;
+	color: #00C;
+}
+#Nomeinicio {
+	position:absolute;
+	left:335px;
+	top:280px;
+	width:84px;
+	height:55px;
+	z-index:12;
+	font-size: 36px;
+}
+#EmuladoresNome {
+	position:absolute;
+	left:459px;
+	top:290px;
+	width:107px;
+	height:27px;
+	z-index:13;
+	font-size: 23px;
+	color: #FFF;
+	visibility: visible;
+}
+#apDiv {
+	position:absolute;
+	left:30px;
+	top:575px;
+	width:25px;
+	height:25px;
+	z-index:13;
+	font-size: 23px;
+	color: #FFF;
+	background-image: url(imagens/icone_winamp.png);
+}
+#RomsNome {
+	position:absolute;
+	left:634px;
+	top:290px;
+	width:76px;
+	height:27px;
+	z-index:13;
+	font-size: 23px;
+	color: #FFF;
+}
+#apDiv7 {	position:absolute;
+	left:470px;
+	top:290px;
+	width:87px;
+	height:27px;
+	z-index:13;
+	font-size: 23px;
+	color: #FFF;
+}
+#InicioNome {
+	position:absolute;
+	left:295px;
+	top:280px;
+	width:90px;
+	height:42px;
+	z-index:14;
+	font-weight: bold;
+	font-size: 33px;
+}
+a {
+	color:#000;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #F00;
+	font-weight: bold;
+	font-size: 18px;
+}
+.corPreta {
+	color:#000;
+	font-size: 33px;
+	text-decoration: none;
+	font-weight: bold;
+}
+.corPreta:hover {
+	color:#0080FF;
+	font-size: 35px;
+	font-weight: bold;
+}
+#apDiv2 {
+	position:absolute;
+	left:30px;
+	top:625px;
+	width:25px;
+	height:25px;
+	z-index:15;
+	background-image: url(imagens/icone_winamp.png);
+}
+#apDiv3 {
+	position:absolute;
+	left:450px;
+	top:280px;
+	width:99px;
+	height:58px;
+	z-index:15;
+}
+#apDiv8 {
+	position:absolute;
+	left:632px;
+	top:280px;
+	width:59px;
+	height:50px;
+	z-index:16;
+}
+#apDiv9 {
+	position:absolute;
+	left:764px;
+	top:280px;
+	width:108px;
+	height:53px;
+	z-index:17;
+}
+#apDiv10 {
+	position:absolute;
+	left:619px;
+	top:322px;
+	width:84px;
+	height:45px;
+	z-index:18;
+}
+#apDiv11 {
+	position:absolute;
+	left:74px;
+	top:473px;
+	width:120px;
+	height:83px;
+	z-index:19;
+}
+#apDiv12 {
+	position:absolute;
+	left:30px;
+	top:475px;
+	width:25px;
+	height:25px;
+	z-index:6;
+	background-image: url(imagens/icone_winamp.png);
+}
+#BarraMenu {
+	position:absolute;
+	left:383px;
+	top:287px;
+	width:650px;
+	height:41px;
+	z-index:10;
+}
+</style>
+<style type="text/css">
+#Botoes2 {
+	position:absolute;
+	left:0px;
+	top:274px;
+	width:1024px;
+	height:64px;
+	z-index:4;
+	background-image: url(imagens/barramenutra.png);
+	visibility: visible;
+}
+#apDiv27 {
+	position:absolute;
+	left:30px;
+	top:278px;
+	width:52px;
+	height:52px;
+	z-index:34;
+}
+#apDiv29 {
+	position:absolute;
+	left:115px;
+	top:278px;
+	width:52px;
+	height:52px;
+	z-index:35;
+}
+#apDiv30 {
+	position:absolute;
+	left:200px;
+	top:278px;
+	width:52px;
+	height:52px;
+	z-index:36;
+}
+.centro {
+	position:absolute;
+}
+body {
+	background-image: url(imagens/psd-background.jpg);
+	background-attachment: fixed;
+}
+#Scrowbar {
+	font-weight: normal;
+	color: #000;
+	background-color: #FFF;
+	height: 250px;
+	width: 310px;
+	margin-right: auto;
+	margin-left: auto;
+	overflow: auto;
+	visibility: visible;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	padding-left: 5px;
+	padding-right: 5px;
+	border-left-style: none;
+}
+</style>
+<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<link href="SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+#Barraflash {	position:absolute;
+	left:314px;
+	top:378px;
+	width:676px;
+	height:93px;
+	z-index:5;
+	visibility: visible;
+}
+#apDiv26 {
+	position:absolute;
+	left:9px;
+	top:856px;
+	width:269px;
+	height:84px;
+	z-index:33;
+}
+#apDiv32 {
+	position:absolute;
+	left:10px;
+	top:934px;
+	width:266px;
+	height:440px;
+	z-index:1;
+	background-color: #FFFFFF;
+}
+#apDiv33 {	position:absolute;
+	left:9px;
+	top:1409px;
+	width:269px;
+	height:87px;
+	z-index:15;
+}
+#apDiv34 {	position:absolute;
+	left:10px;
+	top:1494px;
+	width:266px;
+	height:1011px;
+	z-index:1;
+	background-color: #FFFFFF;
+}
+#apDiv19 {
+	position:absolute;
+	left:13px;
+	top:941px;
+	width:257px;
+	height:430px;
+	z-index:26;
+}
+#postagem {
+	position:absolute;
+	left:314px;
+	top:570px;
+	width:676px;
+	height:300px;
+	z-index:5;
+	visibility: visible;
+	background-color: #FFFFFF;
+}
+#postagem2 {
+	position:absolute;
+	left:314px;
+	top:1800px;
+	width:676px;
+	height:300px;
+	z-index:5;
+	visibility: visible;
+	background-color: #FFFFFF;
+}
+#postagem3 {
+	position:absolute;
+	left:314px;
+	top:980px;
+	width:676px;
+	height:300px;
+	z-index:5;
+	visibility: visible;
+	background-color: #FFFFFF;
+}
+#postagem4 {
+	position:absolute;
+	left:314px;
+	top:1390px;
+	width:676px;
+	height:300px;
+	z-index:5;
+	visibility: visible;
+	background-color: #FFFFFF;
+}
+#Barrapostagem {	position:absolute;
+	left:312px;
+	top:530px;
+	width:680px;
+	height:63px;
+	z-index:5;
+	visibility: visible;
+	background-image: url(imagens/Barrapost.png);
+}
+#Barrapostagem2 {
+	position:absolute;
+	left:312px;
+	top:1760px;
+	width:680px;
+	height:63px;
+	z-index:5;
+	visibility: visible;
+	background-image: url(imagens/Barrapost.png);
+}
+#Barrapostagem3 {
+	position:absolute;
+	left:312px;
+	top:940px;
+	width:680px;
+	height:63px;
+	z-index:5;
+	visibility: visible;
+	background-image: url(imagens/Barrapost.png);
+}
+#Barrapostagem4 {
+	position:absolute;
+	left:312px;
+	top:1350px;
+	width:680px;
+	height:63px;
+	z-index:5;
+	visibility: visible;
+	background-image: url(imagens/Barrapost.png);
+}
+#apDiv13 {	position:absolute;
+	left:30px;
+	top:525px;
+	width:25px;
+	height:25px;
+	z-index:20;
+	background-image: url(imagens/icone_winamp.png);
+}
+#apDiv14 {	position:absolute;
+	left:30px;
+	top:525px;
+	width:25px;
+	height:25px;
+	z-index:20;
+	background-image: url(imagens/icone_winamp.png);
+}
+#apDiv15 {	position:absolute;
+	left:30px;
+	top:525px;
+	width:25px;
+	height:25px;
+	z-index:20;
+	background-image: url(imagens/icone_winamp.png);
+}
+#apDiv16 {	position:absolute;
+	left:30px;
+	top:675px;
+	width:25px;
+	height:25px;
+	z-index:23;
+	background-image: url(imagens/icone_winamp.png);
+}
+#apDiv17 {	position:absolute;
+	left:30px;
+	top:725px;
+	width:25px;
+	height:25px;
+	z-index:24;
+	background-image: url(imagens/icone_winamp.png);
+}
+#postagem11 {	position:absolute;
+	left:30px;
+	top:775px;
+	width:25px;
+	height:25px;
+	z-index:5;
+	visibility: visible;
+	background-image: url(imagens/icone-mail.png);
+}
+#BarramenuSP {	position:absolute;
+	left:67px;
+	top:470px;
+	width:197px;
+	height:38px;
+	z-index:5;
+	visibility: visible;
+	background-color: #FFFFFF;
+}
+#MenuLateral {}
+</style>
+<link href="SpryAssets/SpryMenuBarVertical.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+#postagem9 {	position:absolute;
+	left:67px;
+	top:520px;
+	width:197px;
+	height:38px;
+	z-index:5;
+	visibility: visible;
+	background-color: #FFFFFF;
+}
+#postagem8 {	position:absolute;
+	left:67px;
+	top:570px;
+	width:197px;
+	height:38px;
+	z-index:5;
+	visibility: visible;
+	background-color: #FFFFFF;
+}
+#postagem7 {	position:absolute;
+	left:67px;
+	top:620px;
+	width:197px;
+	height:38px;
+	z-index:5;
+	visibility: visible;
+	background-color: #FFFFFF;
+}
+#postagem6 {	position:absolute;
+	left:67px;
+	top:670px;
+	width:197px;
+	height:38px;
+	z-index:5;
+	visibility: visible;
+	background-color: #FFFFFF;
+}
+#postagem5 {	position:absolute;
+	left:67px;
+	top:720px;
+	width:197px;
+	height:38px;
+	z-index:5;
+	visibility: visible;
+	background-color: #FFFFFF;
+}
+#postagem10 {	position:absolute;
+	left:67px;
+	top:770px;
+	width:197px;
+	height:38px;
+	z-index:5;
+	visibility: visible;
+	background-color: #FFFFFF;
+}
+#apDiv18 {
+	position:absolute;
+	left:663px;
+	top:618px;
+	width:333px;
+	height:133px;
+	z-index:1;
+	visibility: visible;
+}
+#apDiv20 {
+	position:absolute;
+	left:323px;
+	top:632px;
+	width:320px;
+	height:165px;
+	z-index:1;
+}
+.TextoDownloader {
+	color:#FFF;
+	font-size: 32px;
+}
+.TextoDownloader:hover {
+	color:#FF0;
+	font-size: 31px;
+}
+.Downloader {
+	color:#F00;
+	font-size: 24px;
+	font-weight: bold;
+}
+.Downloader:hover {
+	color:#F60;
+	font-size: 25px;
+}
+#apDiv21 {
+	position:absolute;
+	left:351px;
+	top:560px;
+	width:637px;
+	height:40px;
+	z-index:1;
+}
+#apDiv22 {
+	position:absolute;
+	left:325px;
+	top:831px;
+	width:50px;
+	height:40px;
+	z-index:1;
+}
+#apDiv23 {
+	position:absolute;
+	left:378px;
+	top:841px;
+	width:131px;
+	height:40px;
+	z-index:1;
+}
+</style>
+</head>
+
+<body>
+<table width="1024px" border="0" cellpadding="0" cellspacing="0" align="center">
+<tr>
+<td>
+<div class="centro">
+<div class="Downloader" id="apDiv23"><a href="http://gamesjcn.x10.mx/Downloads/Emuladores/MAME Brasil Advanced 32 - 0.122.rar" class="Downloader">Download</a></div>
+<div id="apDiv22"><a href="http://gamesjcn.x10.mx/Downloads/Emuladores/MAME Brasil Advanced 32 - 0.122.rar"><img src="imagens/download-logo.gif" width="50" height="40" /></a></div>
+<div class="TextoDownloader" id="apDiv21"><a href="http://gamesjcn.x10.mx/Downloads/Emuladores/MAME Brasil Advanced 32 - 0.122.rar" class="TextoDownloader">Download MAME Brasil Advanced 32 - 0.122</a></div>
+<div id="apDiv20"><img src="imagens/mame_br.jpg" width="320" height="165" /></div>
+<div id="apDiv18">
+  <div id="Scrowbar">
+    <p><font color="red">O MAME — Multiple Arcade Machine Emulator (Emulador de Múltiplas Máquinas de Arcade)</font> — é o mais famoso emulador de jogos arcades (também conhecidos popularmente no Brasil como fliperamas). São mais de 9000 jogos suportados, incluindo os clássicos que marcaram época nas décadas de 70, 80 e 90.</p>
+    <p>Para que um jogo possa ser emulado no MAME é necessária a utilização de um arquivo chamado ROM, o conjunto de dados extraídos do chip original do arcade. Com estes dados, o emulador comporta-se como o hardware e reproduz o conteúdo da ROM no computador. Sendo assim, os jogos emulados não são meras simulações, mas sim cópias dos originais encontrados em fliperamas.</p>
+    <p>Fãs de arcades que ficavam horas e horas em frente a uma máquina de fliperama agora podem se divertir em seus próprios PCs! O propósito do programa é preservar a história destes arcades, impedindo que sejam esquecidos ou perdidos com o avanço da tecnologia.</p>
+  </div>
+</div>
+<div id="Fundo">
+  <div id="Barraflash"><img src="imagens/animaçao3.gif" alt="" width="676" height="93" /></div>
+  <div id="Botaomenu"><img src="imagens/Menuf.png" alt="" width="269" height="89" /></div>
+  <div id="MenuLateralbarra"></div>
+  <div id="apDiv26"><img src="imagens/recadogamesjcn.png" width="269" height="89" /></div>
+  <div id="apDiv32"></div>
+  <div id="apDiv33"><img src="imagens/Parceiros.png" alt="" width="269" height="89" /></div>
+  <div id="apDiv34"></div>
+  <div id="apDiv19">
+    <!-- BEGIN CBOX - www.cbox.ws - v001 -->
+    <div id="cboxdiv" style="text-align: center; line-height: 0">
+      <div>
+        <iframe frameborder="0" width="257" height="355" src="http://www2.cbox.ws/box/?boxid=1640166&amp;boxtag=vrvgyd&amp;sec=main" marginheight="2" marginwidth="2" scrolling="Auto" allowtransparency="yes" name="cboxmain2-1640166" style="border:#000A1C 1px solid;" id="cboxmain2-1640166"></iframe>
+      </div>
+      <div>
+        <iframe frameborder="0" width="257" height="75" src="http://www2.cbox.ws/box/?boxid=1640166&amp;boxtag=vrvgyd&amp;sec=form" marginheight="2" marginwidth="2" scrolling="No" allowtransparency="yes" name="cboxform2-1640166" style="border:#000A1C 1px solid;border-top:0px" id="cboxform2-1640166"></iframe>
+      </div>
+    </div>
+    <!-- END CBOX -->
+  </div>
+  <div id="postagem"></div>
+  <div id="postagem2"></div>
+  <div id="postagem3"></div>
+  <div id="postagem4"></div>
+  <div id="Barrapostagem"></div>
+  <div id="Barrapostagem2"></div>
+  <div id="Barrapostagem3"></div>
+  <div id="Barrapostagem4"></div>
+  <div id="apDiv12"></div>
+  <div id="apDiv13"></div>
+  <div id="apDiv"></div>
+  <div id="apDiv2"></div>
+  <div id="apDiv16"></div>
+  <div id="apDiv17"></div>
+  <div id="postagem11"></div>
+  <div id="BarramenuSP">
+    <div id="MenuLateral">
+      <ul id="MenuBar2" class="MenuBarVertical">
+        <li><a href="Emuladores.html">EMULADORES</a></li>
+      </ul>
+</div>
+    <div> </div>
+  </div>
+  <div id="postagem9">
+    <ul id="MenuBar4" class="MenuBarVertical">
+      <li><a href="Roms.html">ROMS</a></li>
+    </ul>
+</div>
+  <div id="postagem8">
+    <ul id="MenuBar3" class="MenuBarVertical">
+      <li><a href="PcGames.html">PC-GAMES</a></li>
+    </ul>
+</div>
+  <div id="postagem7">
+    <ul id="MenuBar5" class="MenuBarVertical">
+      <li><a href="Flash_Games.html">FLASH-GAMES</a></li>
+    </ul>
+</div>
+  <div id="postagem6">
+    <ul id="MenuBar6" class="MenuBarVertical">
+      <li><a href="Crack_Games.html">CRACK-GAMES</a></li>
+    </ul>
+</div>
+  <div id="postagem5">
+    <ul id="MenuBar7" class="MenuBarVertical">
+      <li><a href="Tutoriais.html">TUTORIAIS</a></li>
+    </ul>
+</div>
+  <div id="postagem10">
+    <ul id="MenuBar8" class="MenuBarVertical">
+      <li><a href="Contato.html">CONTATO</a></li>
+    </ul>
+  </div>
+</div>
+<div id="Topo"></div>
+<div id="Rodape"></div>
+<div id="InicioIcone"><img src="imagens/inicio5.png" width="120" height="120" /></div>
+<div id="InicioNome"><a href="index.html" class="corbranca"><span class="corPreta">Inicio</span></a></div>
+<span class="33"></span><span class="33"></span>
+<div id="BarraMenu">
+  <ul id="MenuBar1" class="MenuBarHorizontal">
+    <li><a href="Emuladores.html">Emuladores</a></li>
+    <li><a href="Roms.html">Roms</a></li>
+    <li><a href="PcGames.html">PC-Games</a></li>
+    <li><a href="Flash_Games.html">Flash-Games</a></li>
+    <li><a href="Contato.html">CONTATO</a></li>
+  </ul>
+</div>
+<div id="Botoes2"></div>
+<div id="apDiv27"><a href="https://twitter.com/"><img src="imagens/Twittergamesjcn.png" alt="" width="52" height="52" longdesc="http://twitter.com/" /></a></div>
+<div id="apDiv29"><a href="https://www.facebook.com.br"><img src="imagens/Facebookgamesjcn.png" alt="" width="52" height="52" /></a></div>
+<div id="apDiv30"><a href="https://plus.google.com"><img src="imagens/googlemaisgamesjcn.png" alt="" width="52" height="52" longdesc="https://plus.google.com" /></a></div>
+</div>
+</td>
+</tr>
+</table>
+<script type="text/javascript">
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"SpryAssets/SpryMenuBarDownHover.gif", imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+var MenuBar2 = new Spry.Widget.MenuBar("MenuBar2", {imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+var MenuBar4 = new Spry.Widget.MenuBar("MenuBar4", {imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+var MenuBar3 = new Spry.Widget.MenuBar("MenuBar3", {imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+var MenuBar5 = new Spry.Widget.MenuBar("MenuBar5", {imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+var MenuBar6 = new Spry.Widget.MenuBar("MenuBar6", {imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+var MenuBar7 = new Spry.Widget.MenuBar("MenuBar7", {imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+var MenuBar8 = new Spry.Widget.MenuBar("MenuBar8", {imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+</script>
+</body>
+</html>
